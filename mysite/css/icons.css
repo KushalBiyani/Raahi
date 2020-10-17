@@ -228,8 +228,8 @@
     
     .bott {
         position: absolute;
-        bottom: 10px;
-        left: 30px;
+        bottom: 15px;
+        right: 10px;
     }
     
     body {
