@@ -522,6 +522,7 @@
         padding-left: 60px;
         align-items: center;
         padding-top: 20px;
+        margin-right: 40px;
     }
     
     .itnerary-section ul li {
@@ -552,7 +553,7 @@
     .clasic-tour-cont-right {
         float: right;
         width: 450px;
-        margin-top: -185px;
+        margin-top: 50px;
         position: relative;
         right: 0;
         margin-right: 40px;
