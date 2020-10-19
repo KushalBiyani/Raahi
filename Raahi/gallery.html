@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title> Raahi</title>
+</head>
+
+<body>
+    <!-- Site header -->
+    <div class="fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo1.png" height="60px" width="160px" alt="logo" style="margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="topTours.html">Top Tours<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travelblog.html">Blog</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" style="padding-right: 50px;">
+                    <a data-toggle="modal" data-target="#loginModal">
+                      <span class="fa fa-sign-in"></span> Login&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a data-toggle="modal" data-target="#contactUs">
+                    <span class="fa fa-envelope-o"></span> Contact Us</a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal -->
+    <!-- Modal Login-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div id="container">
+                <div id="formcontainer"> <img id="img1" src="img/LOGIN.jpg">
+                    <a href="#"><img id="cross" src="https://image.flaticon.com/icons/svg/148/148766.svg"></a>
+                    <p id="text">Login to your Account</p> <input id="email" type="email" placeholder="Email / Phone"> <input id="password" type="password" placeholder="Password"> <input id="check" type="checkbox">
+                    <p id="text1">Remember Me</p> <a id="forget" href="#">Forget Password ?</a> <button id="login" type="submit">Log In</button>
+                    <hr id="hrline1">
+                    <p id="text2">or login with</p>
+                    <hr id="hrline2"> <button id="facebook"><img id="facebook1" src="https://image.flaticon.com/icons/svg/174/174848.svg">Facebook</button> <button id="google"><img id="google1" src="https://image.flaticon.com/icons/svg/281/281764.svg">Google</button>
+                    <p id="text3">Not a Member?</p> <a id="signup" href="#">Signup Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contactUs-->
+    <div id="contactUs" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="container" style="background-color:whitesmoke;">
+                <br><br>
+                <h3 class="text-center">Contact us</h3><br />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="/post" method="post">
+                            <input class="form-control" name="name" placeholder="Name..." /><br />
+                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
+                            <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
+                            <input class="btn btn-primary" style="background-color: crimson;" type="submit" value="Send" /><br /><br />
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Customer service:</b> <br /> Phone: +91 89622 45021<br /> E-mail: <a href="mailto:support@Raahi.com">support@Raahi.com</a><br />
+                        <br /><br />
+                        <b>Headquarter:</b><br /> Company Inc, <br /> 1881D, Above UCO Bank,<br /> Near Lucky Bakery, Sudama Nagar.<br /> Phone: +91 89622 45021<br />
+                        <br /><br />
+                        <b>Indore:</b><br /> Company I Litd, <br /> B-79<br /> LIG Colony, Indore<br /> Phone: +91 89622 45022<br />
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- Site header complete -->
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0"> Gallery</h1>
+
+        <hr class="mt-2 mb-5">
+
+        <div class="row text-center text-lg-left">
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal3.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal4.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal6.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal7.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal8.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal9.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal10.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal11.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="img/gal12.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="padd">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">We at Raahi India are a modern travel community that provides end to end travel packages in India and abroad. We design the best travel itineraries that encourage group traveling for like-minded people. Our services include road trips,
+                        trekking expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free traveling, top-notch accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket. Just
+                        give us your dates and be ready to experience traveling like never before.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Subscribe Here</h6>
+                    <p class="wysija-paragraph" style="margin-bottom: 0%;">
+                        <label><b>Email </b><span >*</span></label></p>
+                    <input type="text" name="[user][email]" title="Email" value="">
+                    <button type="submit"><i class="material-icons">email</i></button>
+
+
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Address</h6>
+                    <ul>
+                        <li><i class="fa fa-building" aria-hidden="true"></i> Raahi India</li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> Address - 1881D, Above UCO Bank, Near Lucky Bakery, Sudama Nagar.
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +91 89622 45021</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> info@Raahi.com</li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> www.Raahi.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-4">
+                    <span class="navbar-text">
+                        © 2020 Raahi | All rights reserved.
+                    </span>
+                </div>
+                <div class="col-md-5 col-sm-4 col-xs-8">
+                    <span class="navbar-text">
+                     <div class="row">Credits : Amol Kunde (18I5005) , Atul Kumar Gupta (18I5011) </div>
+                     <div class="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dheeraj Kumar Bakoriya (18I5017) , Kushal Biyani (18I5027)</div>
+                    </span>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

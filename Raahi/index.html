@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title> Raahi</title>
+</head>
+
+<body>
+    <!-- Site header -->
+    <div class="fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo1.png" height="60px" width="160px" alt="logo" style="margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="topTours.html">Top Tours<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travelblog.html">Blog</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" style="padding-right: 50px;">
+                    <a data-toggle="modal" data-target="#loginModal">
+                      <span class="fa fa-sign-in"></span> Login&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a data-toggle="modal" data-target="#contactUs">
+                    <span class="fa fa-envelope-o"></span> Contact Us</a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal -->
+    <!-- Modal Login-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div id="container">
+                <div id="formcontainer"> <img id="img1" src="img/LOGIN.jpg">
+                    <a href="#"><img id="cross" src="https://image.flaticon.com/icons/svg/148/148766.svg"></a>
+                    <p id="text">Login to your Account</p> <input id="email" type="email" placeholder="Email / Phone">
+                    <input id="password" type="password" placeholder="Password"> <input id="check" type="checkbox">
+                    <p id="text1">Remember Me</p> <a id="forget" href="#">Forget Password ?</a> <button id="login" type="submit">Log In</button>
+                    <hr id="hrline1">
+                    <p id="text2">or login with</p>
+                    <hr id="hrline2"> <button id="facebook"><img id="facebook1" src="https://image.flaticon.com/icons/svg/174/174848.svg">Facebook</button> <button id="google"><img id="google1" src="https://image.flaticon.com/icons/svg/281/281764.svg">Google</button>
+                    <p id="text3">Not a Member?</p> <a id="signup" href="#">Signup Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contactUs-->
+    <div id="contactUs" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="container" style="background-color:whitesmoke;">
+                <br><br>
+                <h3 class="text-center">Contact us</h3><br />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="/post" method="post">
+                            <input class="form-control" name="name" placeholder="Name..." /><br />
+                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
+                            <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
+                            <input class="btn btn-primary" style="background-color: crimson;" type="submit" value="Send" /><br /><br />
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Customer service:</b> <br /> Phone: +91 89622 45021<br /> E-mail: <a href="mailto:atulkrindian@gmail.com">support@Raahi.com</a><br />
+                        <br /><br />
+                        <b>Headquarter:</b><br /> Company Inc, <br /> 1881D, Above UCO Bank,<br /> Near Lucky Bakery, Sudama Nagar.<br /> Phone: +91 89622 45021<br />
+                        <br /><br />
+                        <b>Indore:</b><br /> Company I Litd, <br /> B-79<br /> LIG Colony, Indore<br /> Phone: +91 89622 45022<br />
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- Site header complete -->
+    <div class="row row1">
+        <div id="carouselExampleIndicators" class="carousel slide col-sm-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" style="height: 450px;">
+                <div class="carousel-item active main-cas">
+                    <img class="main-cas" src="img/indore.jpg" alt="Indore">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Adi Kailash Trek</h3>
+                        <h6>06 Nights - 07 Days</h6>
+                    </div>
+                </div>
+                <div class="carousel-item main-cas">
+                    <img class="main-cas" src="img/indiagate.jpg" alt="India Gate">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Delhi Heritage Trip</h3>
+                        <h6>03 Nights - 04 Days</h6>
+                    </div>
+                </div>
+                <div class="carousel-item main-cas">
+                    <img class="main-cas" src="img/lotus.jpg" alt="Lotus Temple">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Chardham Yatra Package 2020</h3>
+                        <h6>11 Nights - 12 Days</h6>
+                    </div>
+                </div>
+                <div class="carousel-item main-cas">
+                    <img class="main-cas" src="img/taj.jpg" alt="Taj Mahal">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Golden Triangle Tour</h3>
+                        <h6>06 Nights - 07 Days</h6>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="col-sm-8">
+            <div class="tour-right-text">
+                <h1 class="heading">Let us plan you a <br> perfect <span class="orange600"><b>India Holiday</b></span></h1>
+                <p>Personalised, well-crafted tour packages for best experiences</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide " data-ride="carousel ">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <div class="row ">
+                                    <div class="col-md-4 mb-3 ">
+                                        <div class="card ele ">
+                                            <div class="card-body ">
+                                                <h4 class="card-title ">Pilgirimage</h4>
+                                            </div><img class="img-fluid " alt="100%x280 " src="img/pili.jpg ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ">
+                                        <div class="card ele ">
+                                            <div class="card-body ">
+                                                <h4 class="card-title ">Trekking</h4>
+                                            </div><img class="img-fluid " alt="100%x280 " src="img/trekking.jpg ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ">
+                                        <div class="card ele ">
+                                            <div class="card-body ">
+                                                <h4 class="card-title ">Wildlife</h4>
+                                            </div><img class="img-fluid " alt="100%x280 " src="img/wildlife.jpg ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active ">
+                                <div class="row ">
+                                    <div class="col-md-4 mb-3 ">
+                                        <div class="card ele ">
+                                            <div class="card-body ">
+                                                <h4 class="card-title ">Hill Stations</h4>
+                                            </div><img class="img-fluid " alt="100%x280 " src="img/hill.jpg ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ">
+                                        <div class="card ele ">
+                                            <div class="card-body ">
+                                                <h4 class="card-title ">Heritage</h4>
+                                            </div><img class="img-fluid " alt="100%x280 " src="img/heritage.jpg ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ">
+                                        <div class="card ele">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Beach Tours</h4>
+                                            </div><img class="img-fluid" alt="100%x280" src="img/beach.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col s4 m4 l4 center-align">
+                <i class="material-icons md-36 orange600">hotel</i>
+                <h5 class="flow-text">Find your ideal hotel among millions of options that <span class="orange600"><b>Raahi</b></span> offers you </h5>
+            </div>
+            <div class="col s4 m4 l4 center-align">
+                <i class="material-icons md-36 orange600">verified_user</i>
+                <h5 class="flow-text">Always get the best rates at your favorite hotels</h5>
+            </div>
+            <div class="col s4 m4 l4 center-align">
+                <i class="material-icons md-36 orange600">monetization_on</i>
+                <h5 class="flow-text">No added fees on the cancellation of any hotel reservation in <span class="orange600"><b>Raahi</b></span></h5>
+            </div>
+        </div>
+        <br>
+        <hr><br>
+        <div class="container"></div>
+        <div class="row">
+            <h4 style="font-family: CaviarDreams, 'Poiret One', cursive;"><i class="material-icons md-36 green400">new_releases</i><b> The best deals</b></h4>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="img/road.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Rent a car</h5>
+                        <p class="card-text">The best offers for your trip.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img/avion.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">The best price for your trips</h5>
+                        <p class="card-text">Get the best prices for the trip of your dreams.</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div>
+                    <div>
+                        <h4 class="card-title">Group Trips</h4>
+                        <p class="card-text">
+                            Travel along the picturesque destinations, indulge in thrilling activities and enjoy the charm of nature without worrying about the minutest of issues regarding your travel plans! Our highly skilled and experienced group captains arrange all that you
+                            need, while your eyes and body take a treat from nature. Bring together your friends, family or colleagues and be ready to collect innumerable moments that always have an element of serendipity on our amazing group trips!</p>
+                    </div><br><br>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="img/family.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Family Trip</h5>
+                            <p class="card-text">Grandparents, parents, siblings, uncles, aunts- everyone has a unique picture of their perfect trip which surely makes planning a family trip one hell of a nightmare. With our expertise, all you need is to give us are your
+                                dates, and we’ll figure out the best plan for your family!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/college.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">College Trip</h5>
+                            <p class="card-text">Dilemmas in deciding where to go, get the best travel memories and keep your bank accounts, alive at the same time? Keep your hassles aside and create the finest travel memories with your college buddies through our specially
+                                curated trips for college students.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/corporate.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Corporate Trip</h5>
+                            <p class="card-text">Travelling is scientifically proven to make people more productive. So it’s High time that you gather your work colleagues and hit the divinely soothing destinations to rejuvenate yourselves with the best of nature with Raahi’s
+                                customized group trips.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container">
+        <div>
+            <h1>Why Choose Us?</h1>
+            <p>More Than 20 Years Of Experience, Variety Of Tour Packages, Best Deals And Personalised Services.</p>
+            <br>
+            <div class="row">
+                <div class="col s4 m4 l4 center-align">
+                    <i class="material-icons md-36 orange600">how_to_reg</i>
+                    <h4>Experience</h4>
+                    <p class="flow-text">Our dedicated travel team diligently works round-the-clock to design the best travel experiences for the customers. The skilled team spends considerable amounts of time ideating tour packages that guarantee to make travelling with
+                        us an experience like no other. We select the finest hotels in every category, boast an excellent personal fleet of vehicles for transportation.</p>
+                </div>
+                <div class="col s4 m4 l4 center-align">
+                    <i class="material-icons md-36 orange600">thumb_up</i>
+                    <h4>Positive Customer Feedback</h4>
+                    <p class="flow-text">We're truly humbled to have received volumes of positive customer feedback for our services. This appreciation from our prestigious clients is more valuable than any award for us. As a customer-driven travel company, our priority has
+                        always been their satisfaction. Therefore, our dedicated team of experts endeavours to achieve the goal of making our customers happy.s</p>
+                </div>
+                <div class="col s4 m4 l4 center-align">
+                    <i class="material-icons md-36 orange600">military_tech</i>
+                    <h4>Recognition</h4>
+                    <p class="flow-text">We are proud to be accredited by major tour and travel associations in India and world like IATA, IATO, TAAI, IMF, MOT (Ministry of Tourism, Govt of India), and TOFT. It is an honour for us to be able to be a part of crucial initiatives
+                        towards safeguarding animal rights, protection of endangered species, and responsible mountaineering and trekking ventures.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="padd">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">We at Raahi India are a modern travel community that provides end to end travel packages in India and abroad. We design the best travel itineraries that encourage group traveling for like-minded people. Our services include road trips,
+                        trekking expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free traveling, top-notch accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket. Just
+                        give us your dates and be ready to experience traveling like never before.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Subscribe Here</h6>
+                    <p class="wysija-paragraph" style="margin-bottom: 0%;">
+                        <label><b>Email </b><span >*</span></label></p>
+                    <input type="text" name="[user][email]" title="Email" value="">
+                    <button type="submit"><i class="material-icons">email</i></button>
+
+
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Address</h6>
+                    <ul>
+                        <li><i class="fa fa-building" aria-hidden="true"></i> Raahi India</li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> Address - 1881D, Above UCO Bank, Near Lucky Bakery, Sudama Nagar.
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +91 89622 45021</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> info@Raahi.com</li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> www.Raahi.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-4">
+                    <span class="navbar-text">
+                        © 2020 Raahi | All rights reserved.
+                    </span>
+                </div>
+                <div class="col-md-5 col-sm-4 col-xs-8">
+                    <span class="navbar-text">
+                     <div class="row">Credits : Amol Kunde (18I5005) , Atul Kumar Gupta (18I5011) </div>
+                     <div class="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dheeraj Kumar Bakoriya (18I5017) , Kushal Biyani (18I5027)</div>
+                    </span>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

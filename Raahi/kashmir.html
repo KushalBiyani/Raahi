@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title> Raahi</title>
+</head>
+
+<body>
+    <!-- Site header -->
+    <div class="fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo1.png" height="60px" width="160px" alt="logo" style="margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="topTours.html">Top Tours<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travelblog.html">Blogs</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" style="padding-right: 50px;">
+                    <a data-toggle="modal" data-target="#loginModal">
+                      <span class="fa fa-sign-in"></span> Login&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a data-toggle="modal" data-target="#contactUs">
+                    <span class="fa fa-envelope-o"></span> Contact Us</a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal -->
+    <!-- Modal Login-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div id="container">
+                <div id="formcontainer"> <img id="img1" src="img/LOGIN.jpg">
+                    <a href="#"><img id="cross" src="https://image.flaticon.com/icons/svg/148/148766.svg"></a>
+                    <p id="text">Login to your Account</p> <input id="email" type="email" placeholder="Email / Phone"> <input id="password" type="password" placeholder="Password"> <input id="check" type="checkbox">
+                    <p id="text1">Remember Me</p> <a id="forget" href="#">Forget Password ?</a> <button id="login" type="submit">Log In</button>
+                    <hr id="hrline1">
+                    <p id="text2">or login with</p>
+                    <hr id="hrline2"> <button id="facebook"><img id="facebook1" src="https://image.flaticon.com/icons/svg/174/174848.svg">Facebook</button> <button id="google"><img id="google1" src="https://image.flaticon.com/icons/svg/281/281764.svg">Google</button>
+                    <p id="text3">Not a Member?</p> <a id="signup" href="#">Signup Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contactUs-->
+    <div id="contactUs" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="container" style="background-color:whitesmoke;">
+                <br><br>
+                <h3 class="text-center">Contact us</h3><br />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="/post" method="post">
+                            <input class="form-control" name="name" placeholder="Name..." /><br />
+                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
+                            <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
+                            <input class="btn btn-primary" style="background-color: crimson;" type="submit" value="Send" /><br /><br />
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Customer service:</b> <br /> Phone: +91 89622 45021<br /> E-mail: <a href="mailto:support@Raahi.com">support@Raahi.com</a><br />
+                        <br /><br />
+                        <b>Headquarter:</b><br /> Company Inc, <br /> 1881D, Above UCO Bank,<br /> Near Lucky Bakery, Sudama Nagar.<br /> Phone: +91 89622 45021<br />
+                        <br /><br />
+                        <b>Indore:</b><br /> Company I Litd, <br /> B-79<br /> LIG Colony, Indore<br /> Phone: +91 89622 45022<br />
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- Site header complete -->
+
+    <div class="row">
+        <div>
+            <div style="height: 432px;width: 100%;">
+                <img src="img/kashmir.jpg" alt="KASHMIR VALENTINE’S TRIP" style="height: 432px;width: 100%;">
+                <h1 class="centered">KASHMIR VALENTINE’S TRIP</h1>
+            </div>
+        </div>
+        <div class="trip-duration-section">
+            <div>
+                <div class="trip-duration">
+                    <ul>
+                        <li><span>DURATION</span> 5 NIGHTS 6 DAYS</li>
+                        <li><span>TYPE OF TRIP</span> ROAD + FLIGHT</li>
+                        <li><span>START CITY</span> Delhi</li>
+                        <li><span>END CITY</span> Delhi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reset"></div>
+        </div>
+        <div class="clasic-tour-cont-left"><br>
+            <div class="clasic-tour-head" style="display: block; width: 100%; margin: 0px;">
+
+                <h1>
+                    KASHMIR VALENTINE’S TRIP
+                </h1>
+                <div class="resp-tabs-container">
+                    <div class="ab show">
+                        <p>Some major tourist attractions in Jammu and Kashmir are Srinagar, the Mughal Gardens, Gulmarg, Pahalgam, Patnitop, Sanasar, Mansar, Surinsar, Bhaderwah, Jantroon (Dhar), Jai Valley, Chinta Valley, Akhnoor. Kashmir is also known
+                            as Switzerland of Asia. Kashmir is located mainly in the Himalayas. </p>
+                    </div>
+                    <div class="itnerary-section">
+                        <div class="itnerary-section-head">
+                            <h3>Itinerary</h3>
+                            <div class="itnerary-red-hoz"><img src="img/red-hoz.png" alt="Itinerary"></div>
+                        </div>
+                        <div class="itnerary-section-left">
+                            <ul>
+                                <li>
+                                    <figure><img src="img/day-1.png">
+                                        <figcaption>
+
+                                            <h4>Departure ; Pahalgam</h4>
+                                            <p>Departure Delhi to Srinagar by flight. Arrival at Srinagar by 12:00 PM. The pleasant weather will be at your greetings as soon as you step out of the plane. Departure from Airport to Pahalgam. It is the base
+                                                for several treks in the region & for the annual Pilgrimages to the cave shrine of Amarnath, It is surrounded by 12 high snow capped peaks. En-route, visit the Saffron Fields of Pampore, Awantipura ruins
+                                                & enjoy the beautiful countryside life. Overnight stay at Hotel in Pahalgam. Includes : Dinner</p>
+
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-2.png">
+                                        <figcaption>
+
+                                            <h4>Betab Valley</h4>
+                                            <p>Today we'll visit the beautiful Betaab Valley nearby. Made famous when the movie "Betaab" was shot here. This beautiful local and now tourist hotspot has manicured lawns running next to a clear stream. We then
+                                                head towards Aru Valley. A large green meadow during summer, it has been a location for the shooting of many Bollywood movies. In winters, it looks like a mountain meadow in Switzerland - a mix of white
+                                                and green, with towering imposing snowy white cliffs in the background. Includes : Breakfast & Dinner</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-3.png">
+                                        <figcaption>
+
+                                            <h4>Srinagar Local And House Boat</h4>
+                                            <p>As today is Valentine's day, we'll be going to explore beautiful Mughal garden and dal lake. The charismatic view and experience at these places will ensure that you have an amazing time on this day of love.
+                                                Followed by an overnight stay at beautiful houseboat. P.S. Guess the famous Rajesh Khanna song shot on this location! Additional locations are local Shrinagar lake, mall road etc. Includes : Breakfast and
+                                                Dinner
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/day-4.png">
+                                        <figcaption>
+
+                                            <h4>Sonmarg Sightseeing</h4>
+                                            <p>After breakfast, proceed towards Sonmarg (Meadows of Gold). Sonamarg lies at the head of the Sindh valley. The drive-through here presents a spectacular face of the countryside; Sonamarg is the beginning of
+                                                the enchanted journey into a natural wonderland, Surrounded by pine forest mountains upto 5300 meters high. The valley is divided by a spur of the "Thajiwas Range Mountains" one can have a pony ride to visit
+                                                Thajiwas Glacier where snow remains round the year, the major attraction at Sonamarg in summer months. Night stay at hotel. Includes : Breakfast & Dinner.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-5.png">
+                                        <figcaption>
+
+                                            <h4>Gulmarg Sightseeing</h4>
+                                            <p>After Breakfast proceed towards Gulmarg (The Meadow of Flowers). Gulmarg has one of the most beautiful summer resort/winter Ski resorts in the valley, also the World's highest 18 Hole Golf Course. You can have
+                                                a gondola ride (excluded from the package) from Gulmarg to Khilanmarg (Altitude 3100 Mrts) to have a real view at natural beauty of the summer also view of Nanga Parvat (Altitude 8137 Mrts.) in Cloudless
+                                                Days and full snow view in winter. You can have a pony ride (excluded from the package) in the open field to Visits seven springs and to a Alpather lake (Altitude 3843 Mrts) which remains frozen until June.
+                                                Back to Srinagar and Overnight stay at hotel. Includes : Breakfast & Dinner.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-6.png">
+                                        <figcaption>
+
+                                            <h4>Goodbye</h4>
+                                            <p>Breakfast, Departure from Srinagar to Delhi by flight. Arrival to Delhi by 05 :30 PM. Say your teary goodbyes to your new friends, making plans for a reunion tour to ease the pain - not forgetting there are
+                                                so many places left to explore.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clasic-tour-cont-right">
+            <div class="tab-slider">
+                <h5 class="Red">Rates are valid from October 2020 to March 2021 <span style="color:#000;">(Below Cost based on Per Person Basis.)*</span></h5>
+                <br>
+                <hr>
+                <table border="0" cellpadding="5" cellspacing="1" width="100%" bgcolor="#333333" class="Tab-M">
+                    <tbody>
+                        <tr>
+                            <td width="20%" bgcolor="#eeeeee">
+                                <strong>No. of Pax</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee">
+                                <strong>Budget Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee"><strong>Standard Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee">
+                                <strong>Deluxe Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee"><strong>Luxury Hotels</strong></td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                02 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 31683</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF"> INR 35363</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 41688 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 46058</td>
+                        </tr>
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                04 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 24208 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 27888 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 34213 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 38583</td>
+                        </tr>
+
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                05 - 09 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 26853 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF"> INR 30533 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 36858 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 41228</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <hr>
+                <div class="row" style="padding-left: 20px;">
+                    <a href="# "><button type="button " class="btn" style="background-color: orangered;color: white;width: 210px; ">Book Now</button></a><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="# "><button type="button " class="btn" style="background-color: orangered;color: white;width: 210px;"> Add to Favorite</button></a>
+                </div><br>
+
+
+                <h5 class="Red">The Above Cost Includes:</h5>
+                <ul class="ul1">
+                    <li>Accommodation on double sharing basis</li>
+                    <li>Daily breakfast</li>
+                    <li>All applicable govt taxes</li>
+                    <li>Ac vehicle for all transfers &amp; intercity travel</li>
+                    <li>All the arrival and departure transfer with company representative</li>
+                    <li>Complete transportation with an English speaking chauffer</li>
+                    <li>Driver Allowance</li>
+                    <li>Toll Taxes and Parking</li>
+                    <li>State taxes</li>
+                    <li>Fuel </li>
+                    <li>All the currently applicable taxes</li>
+                </ul>
+
+                <h5 class="Red">The Above Cost Doesn't Includes:</h5>
+                <ul class="ul1">
+                    <li>Monument fees</li>
+                    <li>Meals except then breakfast</li>
+                    <li>Tips, Laundry, Phone calls</li>
+                    <li>Any other expenses not mentioned above.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="padd">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">We at Raahi India are a modern travel community that provides end to end travel packages in India and abroad. We design the best travel itineraries that encourage group traveling for like-minded people. Our services include road trips,
+                        trekking expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free traveling, top-notch accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket. Just
+                        give us your dates and be ready to experience traveling like never before.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Subscribe Here</h6>
+                    <p class="wysija-paragraph" style="margin-bottom: 0%;">
+                        <label><b>Email </b><span >*</span></label></p>
+                    <input type="text" name="[user][email]" title="Email" value="">
+                    <button type="submit"><i class="material-icons">email</i></button>
+
+
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Address</h6>
+                    <ul>
+                        <li><i class="fa fa-building" aria-hidden="true"></i> Raahi India</li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> Address - 1881D, Above UCO Bank, Near Lucky Bakery, Sudama Nagar.
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +91 89622 45021</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> info@Raahi.com</li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> www.Raahi.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <span class="navbar-text">
+                    © 2020 Raahi | All rights reserved.
+                </span>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

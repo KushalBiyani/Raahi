@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title> Raahi</title>
+</head>
+
+<body>
+    <!-- Site header -->
+    <div class="fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo1.png" height="60px" width="160px" alt="logo" style="margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="topTours.html">Top Tours<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travelblog.html">Blogs</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" style="padding-right: 50px;">
+                    <a data-toggle="modal" data-target="#loginModal">
+                      <span class="fa fa-sign-in"></span> Login&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a data-toggle="modal" data-target="#contactUs">
+                    <span class="fa fa-envelope-o"></span> Contact Us</a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal -->
+    <!-- Modal Login-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div id="container">
+                <div id="formcontainer"> <img id="img1" src="img/LOGIN.jpg">
+                    <a href="#"><img id="cross" src="https://image.flaticon.com/icons/svg/148/148766.svg"></a>
+                    <p id="text">Login to your Account</p> <input id="email" type="email" placeholder="Email / Phone"> <input id="password" type="password" placeholder="Password"> <input id="check" type="checkbox">
+                    <p id="text1">Remember Me</p> <a id="forget" href="#">Forget Password ?</a> <button id="login" type="submit">Log In</button>
+                    <hr id="hrline1">
+                    <p id="text2">or login with</p>
+                    <hr id="hrline2"> <button id="facebook"><img id="facebook1" src="https://image.flaticon.com/icons/svg/174/174848.svg">Facebook</button> <button id="google"><img id="google1" src="https://image.flaticon.com/icons/svg/281/281764.svg">Google</button>
+                    <p id="text3">Not a Member?</p> <a id="signup" href="#">Signup Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contactUs-->
+    <div id="contactUs" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="container" style="background-color:whitesmoke;">
+                <br><br>
+                <h3 class="text-center">Contact us</h3><br />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="/post" method="post">
+                            <input class="form-control" name="name" placeholder="Name..." /><br />
+                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
+                            <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
+                            <input class="btn btn-primary" style="background-color: crimson;" type="submit" value="Send" /><br /><br />
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Customer service:</b> <br /> Phone: +91 89622 45021<br /> E-mail: <a href="mailto:support@Raahi.com">support@Raahi.com</a><br />
+                        <br /><br />
+                        <b>Headquarter:</b><br /> Company Inc, <br /> 1881D, Above UCO Bank,<br /> Near Lucky Bakery, Sudama Nagar.<br /> Phone: +91 89622 45021<br />
+                        <br /><br />
+                        <b>Indore:</b><br /> Company I Litd, <br /> B-79<br /> LIG Colony, Indore<br /> Phone: +91 89622 45022<br />
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- Site header complete -->
+
+    <div class="row">
+        <div>
+            <div style="height: 432px;width: 100%;">
+                <img src="img/Spiti-Valley.jpg" alt="WINTER SPITI VALLEY" style="height: 432px;width: 100%;">
+                <h1 class="centered">WINTER SPITI VALLEY</h1>
+            </div>
+        </div>
+        <div class="trip-duration-section">
+            <div>
+                <div class="trip-duration">
+                    <ul>
+                        <li><span>DURATION</span> 11 NIGHTS 10 DAYS</li>
+                        <li><span>TYPE OF TRIP</span> ROAD TRIP</li>
+                        <li><span>START CITY</span> INDORE</li>
+                        <li><span>END CITY</span> BHOPAL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reset"></div>
+        </div>
+        <div class="clasic-tour-cont-left"><br>
+            <div class="clasic-tour-head" style="display: block; width: 100%; margin: 0px;">
+
+                <h1>
+                    Spiti Valley
+                </h1>
+                <div class="resp-tabs-container">
+                    <div class="ab show">
+                        <p>As unique as its name, a trip to Spiti Valley is an experience of the ultimate deserted beauty! Separated from fertile Lahaul by the soaring 4551m Kunzum La, the Himalayan region of Spiti is another chunk of Tibet marooned in India.
+                            While this region stays cut off from the rest of the world in the months of October to February, you can visit Spiti from March to May to enjoy the snow clad vistas of this gorgeous cold desert. That is exactly what our Winter
+                            Edition –Spiti Valley Tour Package for 2020 is all about.</p>
+                    </div>
+                    <div class="itnerary-section">
+                        <div class="itnerary-section-head">
+                            <h3>Itinerary</h3>
+                            <div class="itnerary-red-hoz"><img src="img/red-hoz.png" alt="Itinerary"></div>
+                        </div>
+                        <div class="itnerary-section-left">
+                            <ul>
+                                <li>
+                                    <figure><img src="img/day-1.png">
+                                        <figcaption>
+
+                                            <h4>DEPARTURE</h4>
+                                            <p>FROM INDORE - Departure from Indore to Ambala cant. by Malwa Express</p>
+
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-2.png">
+                                        <figcaption>
+
+                                            <h4>ARRIVALS</h4>
+                                            <p> Get transfer to Shimla. Explore Shimla by your own. Overnight stay at hotel.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-3.png">
+                                        <figcaption>
+
+                                            <h4> SHIMLA TO CHITKUL</h4>
+                                            <p>we start early morning today we will be entering the Kinnaur Valley . The landscape will change as we will be coming close to the tree line and will gain in the altitude we will be crossing the famous cliff
+                                                road of kinnaur today and will be staying over night at chitkul the last village on indo China border. Includes : Breakfast & Dinner</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/day-4.png">
+                                        <figcaption>
+
+                                            <h4>CHITKUL TO NAKO</h4>
+                                            <p>After have the breakfast and 1 hours of roaming around the village chitkul then we head towards Nako Lake. Today will be heading from lower Kinnaur to the upper kinnaur we will be crossing the district HQ Rekong
+                                                PO and will be crossing pooh from where we won’t be having mobile network we will be driving through narrow gorges and will have changes to view some wild life as ELL night stay at nako Includes : Breakfast
+                                                & Dinner</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-5.png">
+                                        <figcaption>
+
+                                            <h4>Uttarkashi - Gangotri - Uttarkashi</h4>
+                                            <p>After Early Breakfast drive to Gangotri. which is located at an altitude of 3048 meters and surrounded by snow capped picturesque Himalayans. After Offering prayer at Gangotri temple explore the place. Don't
+                                                forget to look at submerged Shivling of natural rock. Drive back to to Uttarkashi. Overnight stay at hotel.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-6.png">
+                                        <figcaption>
+
+                                            <h4>Uttarkashi - Guptkashi</h4>
+                                            <p>After an early breakfast drive to Guptkashi. It is an approx 210 Kms in 7 hrs journey. On arrival check in at hotel, Overnight stay at hotel.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-7.png">
+                                        <figcaption>
+
+                                            <h4>Guptkashi - Kedarnath</h4>
+                                            <p>In the morning leave for Gaurikund, from this place trek to Kedarnath commences. Kedarnath is located at an altitude of 3584 meters from sea level. By cover the distance 45 Kms and 14 Kms via trekking. To cover
+                                                trekking distance you can hire pony or Doli. Kedarnath houses one of the twelve Jyotirlingas of Lord Shiva. On reaching Kedarnath visit the main temple. Overnight stay at Kedarnath.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-8.png">
+                                        <figcaption>
+
+                                            <h4>Kedarnath - Pipalkoti</h4>
+                                            <p>After early morning visit to Kedarnath temple return for Gaurikund (14 Kms trekking distance). And drive for Pipalkoti, covering approx. 158 Kms in five hr.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-9.png">
+                                        <figcaption>
+
+                                            <h4>Pipalkoti - Badrinath</h4>
+                                            <p>After breakfast proceed to Badrinath via Joshimath. Road distance include here is 77 Kms which will covered in 3 hrs. On arrival at Badrinath check-in hotel and enjoy the evening Aarti at Badrinath Temple. Overnight
+                                                stay at Badrinath.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-10.png">
+                                        <figcaption>
+
+                                            <h4>RAMPUR TO CHANDIGARH ; DEPARTURES</h4>
+                                            <p>Early Morning Departure from Rampur to Chandigarh. Departure Ambala cant. to Indore and Delhi at 08:00 PM by Chandigarh-Indore Express. Ambala cant. to Mumbai at 06:00 PM by Chandigarh-Indore Express. Ambala
+                                                cant. to Bhopal at 10:45 PM by Swaraj Express.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-11.png">
+                                        <figcaption>
+
+                                            <h4>GOODBYE </h4>
+                                            <p>Say your teary goodbyes to your new friends, making plans for a reunion tour to ease the pain - not forgetting there are so many places left to explore. Arrival Timings: delhi - 11:15 pm (13 march 2020) Indore
+                                                - 05:35 pm mumbai - 06:05 pm bhopal - 06:45 pmDay 2
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clasic-tour-cont-right">
+            <div class="tab-slider">
+                <h5 class="Red">Rates are valid from October 2020 to March 2021 <span style="color:#000;">(Below Cost based on Per Person Basis.)*</span></h5>
+                <br>
+                <hr>
+                <table border="0" cellpadding="5" cellspacing="1" width="100%" bgcolor="#333333" class="Tab-M">
+                    <tbody>
+                        <tr>
+                            <td width="20%" bgcolor="#eeeeee">
+                                <strong>No. of Pax</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee">
+                                <strong>Budget Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee"><strong>Standard Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee">
+                                <strong>Deluxe Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee"><strong>Luxury Hotels</strong></td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                02 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 31683</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF"> INR 35363</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 41688 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 46058</td>
+                        </tr>
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                04 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 24208 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 27888 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 34213 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 38583</td>
+                        </tr>
+
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                05 - 09 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 26853 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF"> INR 30533 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 36858 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 41228</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <hr>
+                <div class="row" style="padding-left: 20px;">
+                    <a href="# "><button type="button " class="btn" style="background-color: orangered;color: white;width: 210px; ">Book Now</button></a><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="# "><button type="button " class="btn" style="background-color: orangered;color: white;width: 210px;"> Add to Favorite</button></a>
+                </div><br>
+
+
+                <h5 class="Red">The Above Cost Includes:</h5>
+                <ul class="ul1">
+                    <li>Accommodation on double sharing basis</li>
+                    <li>Daily breakfast</li>
+                    <li>All applicable govt taxes</li>
+                    <li>Ac vehicle for all transfers &amp; intercity travel</li>
+                    <li>All the arrival and departure transfer with company representative</li>
+                    <li>Complete transportation with an English speaking chauffer</li>
+                    <li>Driver Allowance</li>
+                    <li>Toll Taxes and Parking</li>
+                    <li>State taxes</li>
+                    <li>Fuel </li>
+                    <li>All the currently applicable taxes</li>
+                </ul>
+
+                <h5 class="Red">The Above Cost Doesn't Includes:</h5>
+                <ul class="ul1">
+                    <li>Monument fees</li>
+                    <li>Meals except then breakfast</li>
+                    <li>Tips, Laundry, Phone calls</li>
+                    <li>Any other expenses not mentioned above.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="padd">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">We at Raahi India are a modern travel community that provides end to end travel packages in India and abroad. We design the best travel itineraries that encourage group traveling for like-minded people. Our services include road trips,
+                        trekking expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free traveling, top-notch accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket. Just
+                        give us your dates and be ready to experience traveling like never before.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Subscribe Here</h6>
+                    <p class="wysija-paragraph" style="margin-bottom: 0%;">
+                        <label><b>Email </b><span >*</span></label></p>
+                    <input type="text" name="[user][email]" title="Email" value="">
+                    <button type="submit"><i class="material-icons">email</i></button>
+
+
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Address</h6>
+                    <ul>
+                        <li><i class="fa fa-building" aria-hidden="true"></i> Raahi India</li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> Address - 1881D, Above UCO Bank, Near Lucky Bakery, Sudama Nagar.
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +91 89622 45021</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> info@Raahi.com</li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> www.Raahi.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <span class="navbar-text">
+                    © 2020 Raahi | All rights reserved.
+                </span>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

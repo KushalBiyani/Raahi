@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title> Raahi</title>
+</head>
+
+<body>
+    <!-- Site header -->
+    <div class="fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo1.png" height="60px" width="160px" alt="logo" style="margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="topTours.html">Top Tours<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travelblog.html">Blogs</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" style="padding-right: 50px;">
+                    <a data-toggle="modal" data-target="#loginModal">
+                      <span class="fa fa-sign-in"></span> Login&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a data-toggle="modal" data-target="#contactUs">
+                    <span class="fa fa-envelope-o"></span> Contact Us</a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal -->
+    <!-- Modal Login-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div id="container">
+                <div id="formcontainer"> <img id="img1" src="img/LOGIN.jpg">
+                    <a href="#"><img id="cross" src="https://image.flaticon.com/icons/svg/148/148766.svg"></a>
+                    <p id="text">Login to your Account</p> <input id="email" type="email" placeholder="Email / Phone"> <input id="password" type="password" placeholder="Password"> <input id="check" type="checkbox">
+                    <p id="text1">Remember Me</p> <a id="forget" href="#">Forget Password ?</a> <button id="login" type="submit">Log In</button>
+                    <hr id="hrline1">
+                    <p id="text2">or login with</p>
+                    <hr id="hrline2"> <button id="facebook"><img id="facebook1" src="https://image.flaticon.com/icons/svg/174/174848.svg">Facebook</button> <button id="google"><img id="google1" src="https://image.flaticon.com/icons/svg/281/281764.svg">Google</button>
+                    <p id="text3">Not a Member?</p> <a id="signup" href="#">Signup Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contactUs-->
+    <div id="contactUs" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="container" style="background-color:whitesmoke;">
+                <br><br>
+                <h3 class="text-center">Contact us</h3><br />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="/post" method="post">
+                            <input class="form-control" name="name" placeholder="Name..." /><br />
+                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
+                            <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
+                            <input class="btn btn-primary" style="background-color: crimson;" type="submit" value="Send" /><br /><br />
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Customer service:</b> <br /> Phone: +91 89622 45021<br /> E-mail: <a href="mailto:support@Raahi.com">support@Raahi.com</a><br />
+                        <br /><br />
+                        <b>Headquarter:</b><br /> Company Inc, <br /> 1881D, Above UCO Bank,<br /> Near Lucky Bakery, Sudama Nagar.<br /> Phone: +91 89622 45021<br />
+                        <br /><br />
+                        <b>Indore:</b><br /> Company I Litd, <br /> B-79<br /> LIG Colony, Indore<br /> Phone: +91 89622 45022<br />
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- Site header complete -->
+
+    <div class="row">
+        <div>
+            <div style="height: 432px;width: 100%;">
+                <img src="img/adi_kailash.jpg" alt="Adi Kailash Trek" style="height: 432px;width: 100%;">
+                <h1 class="centered">ADI KAILASH TREK</h1>
+            </div>
+        </div>
+        <div class="trip-duration-section">
+            <div>
+                <div class="trip-duration">
+                    <ul>
+                        <li><span>DURATION</span> 7 NIGHTS 6 DAYS</li>
+                        <li><span>TYPE OF TRIP</span> ROAD + TRAIN</li>
+                        <li><span>START CITY</span> Delhi</li>
+                        <li><span>END CITY</span> Delhi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reset"></div>
+        </div>
+        <div class="clasic-tour-cont-left"><br>
+            <div class="clasic-tour-head" style="display: block; width: 100%; margin: 0px;">
+
+                <h1>
+                    Adi Kailash Trek
+                </h1>
+                <div class="resp-tabs-container">
+                    <div class="ab show">
+                        <p>Because of a very close resemblance with Mount Kailash, Adi Kailash is also called the ‘Chotta Kailash’ or ‘Little Kailash’. Adi Kailash stands at a great height of 6,191 metres and is located in India, close to the Indo-Tibetan
+                            border. The region around the peak is peaceful, soothing and incredibly beautiful. At the bottom of the mighty peak quietly exists a lake, known as Gaurikund, which beautifully mirrors the Adi Kailash, Parvati Sarovar (also
+                            known as Manasarovar) is another lake near the peak. It is much smaller than its namesake (Manasarovar Lake, Tibet). Near the shoreline stands a shrine of Lord Shiva and Goddess Parvati. After the Chinese occupation of Tibet,
+                            Chotta Kailash has been looked up as the closest and most respected substitute of Mt. Kailash. Through the Adi-Kailash Trek, one will witness the amazing snow-clad peaks of Annapurna, dense forest, several waterfalls, surging
+                            Kali River, lovely diversity of wild flowers and fruits at Narayan Ashram, and much more. Mount Adi Kailash and Parvati Sarovar are ancient holy places for Hindus in the Kumaon Himalayas. </p>
+                    </div>
+                    <div class="itnerary-section">
+                        <div class="itnerary-section-head">
+                            <h3>Itinerary</h3>
+                            <div class="itnerary-red-hoz"><img src="img/red-hoz.png" alt="Itinerary"></div>
+                        </div>
+                        <div class="itnerary-section-left">
+                            <ul>
+                                <li>
+                                    <figure><img src="img/day-1.png">
+                                        <figcaption>
+
+                                            <h4>Delhi - Kathgodam (By train/Volvo) - Pithoragarh(by Tempo/175 kms/6000 ft)</h4>
+                                            <p>Your journey will begin from Delhi by train or Volvo bus at about 10:00 PM, you may reach the grounds of Kathgodam at around 5-6 AM. After arrival at Kathgodam you will be escorted by our representative from
+                                                where we head to Pithoragarh via jeeps or tempo travellers.Enroute we stop nearby Bhimtal for breakfast, Daniya village for lunch followed by tea and dinner at Pithoragarh where your stay will also be arranged.</p>
+
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-2.png">
+                                        <figcaption>
+
+                                            <h4>Pithoragarh - Dharchula(Tempo/Jeep 100 kms/3500 ft)</h4>
+                                            <p>On the next day of the trip we will head to Dharchula which is around 100 kms away from Pithoragarh and will take 4-5 hours to reach. On the way to Dharchula, we will stop by to have breakfast and later resume
+                                                our journey to Dharchula. On arrival, a comfortable stay will be organised for you in a hotel along with lunch, tea and dinner at Dharchula.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-3.png">
+                                        <figcaption>
+
+                                            <h4>Dharchula - Lakhanpur - Lamari(50 Kms by Jeep & 9 kms trek 6800 ft)</h4>
+
+                                            <p>
+                                                Early departure in jeeps to Lakhanpur/Pangla will be followed with a filling breakfast for a good start to the morning. On arrival at Lakhanpur, we will trek 9 kms to Lamari/Malpa and have a nourishing lunch along with evening tea and dinner at Lamari.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/day-4.png">
+                                        <figcaption>
+
+                                            <h4>Lamari - Budhi - Nabi(9 kms trek & 18 kms Gypsy 9500 ft)</h4>
+                                            <p>Lamari - Budhi - Nabi(9 kms trek & 18 kms Gypsy 9500 ft) The next day after heavy breakfast we will take 5 kms trek to Budhi and on arrival you can rest and have snacks. If you’re lucky, you may get a gypsy
+                                                for your further expedition, otherwise continue for a 4 kilometre trek to Chialekh followed by Nabi which is another 14 kilometre trek.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-5.png">
+                                        <figcaption>
+
+                                            <h4>Nabi - Nampa - Kutti (14 Kms by Gypsy & trek 6 kms 12500 ft)</h4>
+                                            <p>After breakfast at Nabi, you will be driven to Nampa which is 14 km away and once you arrive at Nampa, you will be served with snacks. Later, after resting, you can continue with the trek to Kutti which is 5
+                                                to 6 kms away. Upon arrival, lunch, tea and dinner will be organized at Kutti followed by stayover at an old village guest house.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-6.png">
+                                        <figcaption>
+
+                                            <h4>Kitti - Jyolingkong(14 kms by trek/Horse 14500 ft)</h4>
+                                            <p>On day 6, after breakfast in Kutti, we will go to Jyolingkong, a 14 kms alpine trek and stop midway for snacks at Sumchuma. Later, we will continue with the trek to Jyolingking where lunch and dinner will be
+                                                organized followed by a stayover at the tents.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-7.png">
+                                        <figcaption>
+
+                                            <h4>Jyolingkong - Kutti(14 kms by trek or horse 12500 ft)</h4>
+                                            <p>In the morning after breakfast, you will be taken to the temple located on the banks of Parvati Sarovar where you can perform parikrama of the lake. After which we can head to Gaurikund which is located around
+                                                4 km. Later, you can go to the campsite for lunch followed by a return to Kuti via Samchuma where snacks are provided. Dinner and homestay at Kutti.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-8.png">
+                                        <figcaption>
+
+                                            <h4>Kutti - Nampa - Nabi(6 kmsand 14 kms by Gypsy, 9500 ft)</h4>
+                                            <p>The next day from Kuti you can visit Nabi where lunch, evening tea and dinner will be served. In spare time you can also stroll to the nearby villages.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-9.png">
+                                        <figcaption>
+
+                                            <h4>Nabi - Om Parvat By gypsy 22 kms, 9500 feet and back to Nabi</h4>
+                                            <p>From Nabi you can visit Nabidang to sightsee Om Parvat and Kalapani Temple via gypsy which as its 22 kms away. On your way back from the pilgrimage tour you will be served breakfast and lunch at Kalapani along
+                                                with afternoon tea and dinner at Nabi.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-10.png">
+                                        <figcaption>
+
+                                            <h4>Nabi - Chialekh/Budiby Gypsy & 9 kms trek to LAMARI 6800 ft</h4>
+                                            <p>Post breakfast we head straight to Budhi and later will have lunch, evening tea and delectable dinner at Lamari/Malpa.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure><img src="img/day-11.png">
+                                        <figcaption>
+
+                                            <h4>Dharchula - Kathgodam - Delhi (350 kms drive and train 290 kms)</h4>
+                                            <p>An early morning breakfast in Ogla followed by lunch in Daniya and some good evening tea in Bhimtal. Giving the journey a delicious end, dinner is organised at Kathgodam from where we depart by train at night
+                                                for Delhi. Arrival at Delhi by next morning by 05:00 am to 06:00am.</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clasic-tour-cont-right">
+            <div class="tab-slider">
+                <h5 class="Red">Rates are valid from October 2020 to March 2021 <span style="color:#000;">(Below Cost based on Per Person Basis.)*</span></h5>
+                <br>
+                <hr>
+                <table border="0" cellpadding="5" cellspacing="1" width="100%" bgcolor="#333333" class="Tab-M">
+                    <tbody>
+                        <tr>
+                            <td width="20%" bgcolor="#eeeeee">
+                                <strong>No. of Pax</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee">
+                                <strong>Budget Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee"><strong>Standard Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee">
+                                <strong>Deluxe Hotels</strong></td>
+                            <td width="20%" align="center" bgcolor="#eeeeee"><strong>Luxury Hotels</strong></td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                02 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 31000</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF"> INR 38363</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 44688 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 48058</td>
+                        </tr>
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                04 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 27208 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 31188 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 37213 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 41583</td>
+                        </tr>
+
+                        <tr>
+                            <td width="20%" align="left" bgcolor="#FFFFFF">
+                                05 - 09 Pax</td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 29853 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF"> INR 33533 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">
+                                INR 39858 </td>
+                            <td width="20%" align="center" bgcolor="#FFFFFF">INR 44228</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <hr>
+                <div class="row" style="padding-left: 20px;">
+                    <a href="# "><button type="button " class="btn" style="background-color: orangered;color: white;width: 210px; ">Book Now</button></a><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="# "><button type="button " class="btn" style="background-color: orangered;color: white;width: 210px;"> Add to Favorite</button></a>
+                </div><br>
+
+
+                <h5 class="Red">The Above Cost Includes:</h5>
+                <ul class="ul1">
+                    <li>Accommodation on double sharing basis</li>
+                    <li>Daily breakfast</li>
+                    <li>All applicable govt taxes</li>
+                    <li>Ac vehicle for all transfers &amp; intercity travel</li>
+                    <li>All the arrival and departure transfer with company representative</li>
+                    <li>Complete transportation with an English speaking chauffer</li>
+                    <li>Driver Allowance</li>
+                    <li>Toll Taxes and Parking</li>
+                    <li>State taxes</li>
+                    <li>Fuel </li>
+                    <li>All the currently applicable taxes</li>
+                </ul>
+
+                <h5 class="Red">The Above Cost Doesn't Includes:</h5>
+                <ul class="ul1">
+                    <li>Monument fees</li>
+                    <li>Meals except then breakfast</li>
+                    <li>Tips, Laundry, Phone calls</li>
+                    <li>Any other expenses not mentioned above.</li>
+                </ul><br>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="padd">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">We at Raahi India are a modern travel community that provides end to end travel packages in India and abroad. We design the best travel itineraries that encourage group traveling for like-minded people. Our services include road trips,
+                        trekking expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free traveling, top-notch accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket. Just
+                        give us your dates and be ready to experience traveling like never before.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Subscribe Here</h6>
+                    <p class="wysija-paragraph" style="margin-bottom: 0%;">
+                        <label><b>Email </b><span >*</span></label></p>
+                    <input type="text" name="[user][email]" title="Email" value="">
+                    <button type="submit"><i class="material-icons">email</i></button>
+
+
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Address</h6>
+                    <ul>
+                        <li><i class="fa fa-building" aria-hidden="true"></i> Raahi India</li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> Address - 1881D, Above UCO Bank, Near Lucky Bakery, Sudama Nagar.
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +91 89622 45021</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> info@Raahi.com</li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> www.Raahi.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <span class="navbar-text">
+                    © 2020 Raahi | All rights reserved.
+                </span>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

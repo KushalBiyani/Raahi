@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/fontastic.css">
+    <title> Raahi</title>
+</head>
+
+<body>
+    <!-- Site header -->
+    <div class="fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo1.png" height="60px" width="160px" alt="logo" style="margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="topTours.html">Top Tours<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="travelblog.html">Blog</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" style="padding-right: 50px;">
+                    <a data-toggle="modal" data-target="#loginModal">
+                      <span class="fa fa-sign-in"></span> Login&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a data-toggle="modal" data-target="#contactUs">
+                    <span class="fa fa-envelope-o"></span> Contact Us</a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal -->
+    <!-- Modal Login-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div id="container">
+                <div id="formcontainer"> <img id="img1" src="img/LOGIN.jpg">
+                    <a href="#"><img id="cross" src="https://image.flaticon.com/icons/svg/148/148766.svg"></a>
+                    <p id="text">Login to your Account</p> <input id="email" type="email" placeholder="Email / Phone"> <input id="password" type="password" placeholder="Password"> <input id="check" type="checkbox">
+                    <p id="text1">Remember Me</p> <a id="forget" href="#">Forget Password ?</a> <button id="login" type="submit">Log In</button>
+                    <hr id="hrline1">
+                    <p id="text2">or login with</p>
+                    <hr id="hrline2"> <button id="facebook"><img id="facebook1" src="https://image.flaticon.com/icons/svg/174/174848.svg">Facebook</button> <button id="google"><img id="google1" src="https://image.flaticon.com/icons/svg/281/281764.svg">Google</button>
+                    <p id="text3">Not a Member?</p> <a id="signup" href="#">Signup Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal contactUs-->
+    <div id="contactUs" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="container" style="background-color:whitesmoke;">
+                <br><br>
+                <h3 class="text-center">Contact us</h3><br />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="/post" method="post">
+                            <input class="form-control" name="name" placeholder="Name..." /><br />
+                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
+                            <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
+                            <input class="btn btn-primary" style="background-color: crimson;" type="submit" value="Send" /><br /><br />
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Customer service:</b> <br /> Phone: +91 89622 45021<br /> E-mail: <a href="mailto:support@Raahi.com">support@Raahi.com</a><br />
+                        <br /><br />
+                        <b>Headquarter:</b><br /> Company Inc, <br /> 1881D, Above UCO Bank,<br /> Near Lucky Bakery, Sudama Nagar.<br /> Phone: +91 89622 45021<br />
+                        <br /><br />
+                        <b>Indore:</b><br /> Company I Litd, <br /> B-79<br /> LIG Colony, Indore<br /> Phone: +91 89622 45022<br />
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- Site header complete -->
+
+    <main class="posts-listing "><br><br><br><br><br>
+        <div class="container">
+            <h1>Top Blogs</h1><br>
+
+            <div class="row">
+                <!-- post -->
+                <div class="post col-xl-6">
+                    <div class="post-thumbnail">
+                        <a href="#"><img src="img/char-dham-yatra.jpg" alt="..." class="img-fluid" style="height: 400px; width: 600px;"></a>
+                    </div>
+                    <div class="post-details">
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date meta-last">20 Aug | 2020</div>
+                            <div class="category">Travel</div>
+                        </div>
+
+                        <h3 class="h4">A Journey To Quest For Moksha</h3>
+
+                        <p class="text-muted">Nestled amongst the peaks of Himalayas in Uttarakhand, Char Dhams are the four holy places of Hindu Pilgrimage. The four sites that together make the Hindu pilgrimage are; Yamunotri, Gangotri, Kedarnath, and Badrinath. Each and
+                            every of these 4 locations are sacred in Hindu religion. It is believed that whosoever visits these holy shrines once in their lifetime, achieves salvation or Moksha.</p>
+                        <footer class="post-footer d-flex align-items-center">
+                            <div href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="img/Kushal-Walia.jpg" alt="..." class="img-fluid"></div>
+                                <div class="title"><span>Kushal Walia</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="date"><i class="icon-clock" style="display: inline-block;"></i> 2 months ago</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        </footer>
+                    </div><br><br>
+                </div>
+                <!-- post -->
+                <div class="post col-xl-6">
+                    <div class="post-thumbnail">
+                        <a href="#"><img src="img/kastravel.jpg" alt="..." class="img-fluid" style="height: 400px; width: 600px;"></a>
+                    </div>
+                    <div class="post-details">
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date meta-last">10 Jan | 2020</div>
+                            <div class="category">Travel</div>
+                        </div>
+
+                        <h3 class="h4">In Paradise Called Kashmir</h3>
+
+                        <p class="text-muted">Here in Kashmir nature has an identity all its own. It enthralls and seduces in equal measures. If you fly to Srinagar, you will notice that it is easy to find incredible panoramas and drives everywhere you go. We’ve included some
+                            of our favourite suggestions for things to do in Srinagar in this article. Whatever you choose, don’t forget to take the time to talk to the people and listen to their stories with sumptuous stories by the dozen.</p>
+                        <footer class="post-footer d-flex align-items-center">
+                            <div href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="img/walking.jpeg" alt="..." class="img-fluid"></div>
+                                <div class="title"><span>Miss Walking Shoes</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="date"><i class="icon-clock" style="display: inline-block;"></i> 10 months ago</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        </footer>
+                    </div><br><br>
+                </div>
+                <!-- post -->
+                <div class="post col-xl-6">
+                    <div class="post-thumbnail">
+                        <a href="#"><img src="img/agra.jpg" alt="..." class="img-fluid" style="height: 400px; width: 600px;"></a>
+                    </div>
+                    <div class="post-details">
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date meta-last">20 May | 2020</div>
+                            <div class="category">Travel</div>
+                        </div>
+
+                        <h3 class="h4">GOLDEN TRIANGLE : DELHI, AGRA, AND JAIPUR</h3>
+
+                        <p class="text-muted">The Golden Triangle is India's most popular tourist route, and it deserves the credit. These three cities take you back in time to the majestic, decadent, and fascinating world of the Moguls and Maharajas. They left behind some
+                            of the world’s best architecture and a lineage of riveting history. </p>
+                        <footer class="post-footer d-flex align-items-center">
+                            <div href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="img/mdp.jpg" alt="..."></div>
+                                <div class="title"><span>MDP</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="date"><i class="icon-clock" style="display: inline-block;"></i> 5 months ago</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        </footer>
+                    </div><br><br>
+                </div>
+                <!-- post -->
+                <div class="post col-xl-6">
+                    <div class="post-thumbnail">
+                        <a href="#"><img src="img/adi.jpg" alt="..." class="img-fluid" style="height: 400px; width: 600px;"></a>
+                    </div>
+                    <div class="post-details">
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date meta-last">20 Dec | 2019</div>
+                            <div class="category">Travel</div>
+                        </div>
+
+                        <h3 class="h4">Adi Kailash - The Abode of Shiva</h3>
+
+                        <p class="text-muted">Starting from Shiva himself, many great beings chose to deposit and preserve their work in Kailash. Rishabadev, the saints of the Bon religion, two of the greatest Buddhist teachers, Agastyamuni, the Nayanmars, Sage Vyasya, Adi
+                            Shankracharya– all of them chose Kailash Parvat.- Sadguru.</p>
+                        <footer class="post-footer d-flex align-items-center">
+                            <div href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="img/sunil.jpg" alt="..." class="img-fluid"></div>
+                                <div class="title"><span>Sunil Sharma</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="date"><i class="icon-clock" style="display: inline-block;"></i> 10 months ago</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        </footer>
+                    </div><br><br>
+                </div>
+            </div>
+        </div>
+    </main><br>
+    <hr>
+    <div class="container py-4">
+        <header class="text-center mb-5">
+            <h2>My travel essentials</h2>
+        </header>
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6">
+                <a class="text-reset text-decoration-none" href="#"><img class="mb-4" src="img/bag.e4c5f0da.png" alt="" height="150">
+                    <h3 class="h5">Backpack</h3>
+                    <p class="text-small text-muted">Explore more with less weight.</p>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a class="text-reset text-decoration-none" href="#"><img class="mb-4" src="img/camera.3ee186fd.png" alt="" height="150">
+                    <h3 class="h5">Camera</h3>
+                    <p class="text-small text-muted">Imagine the world having more colors.</p>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a class="text-reset text-decoration-none" href="#"><img class="mb-4" src="img/glasses.80147afd.png" alt="" height="150">
+                    <h3 class="h5">Sunglasses</h3>
+                    <p class="text-small text-muted">Its beautiful sunshine outside.</p>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a class="text-reset text-decoration-none" href="#"><img class="mb-4" src="img/headphone.cccb2497.png" alt="" height="150">
+                    <h3 class="h5">Headphones</h3>
+                    <p class="text-small text-muted">Music connects everything atlast.</p>
+                </a>
+            </div>
+        </div>
+    </div><br>
+    <hr><br>
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-6 position-relative py-4"><img class="subscribe-img" src="img/subscribe-img-1.f15f53b1.jpg" alt=""><img class="subscribe-img" src="img/subscribe-img-2.d0fd7aee.jpg" alt=""></div>
+            <div class="col-lg-6">
+                <h2>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Best money saving - Travel tips</font>
+                    </font>
+                </h2>
+                <p class="text-muted mb-5">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Lets make memories thus building brightful past behind.</font>
+                        <font style="vertical-align: inherit;">Upon these we make any movie, select, or, they deserted the general's dishonor, fled, some of the consequences which it can never fall she undertakes the very anguish of mind. </font>
+                        <font style="vertical-align: inherit;">It is our pleasure finder.</font>
+                    </font>
+                </p>
+                <form action="#">
+                    <div class="row">
+                        <div class="form-group col-lg-8">
+                            <input class="form-control" type="email" name="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <button class="btn btn-dark btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Subscribe</font></font></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><br>
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="padd">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">We at Raahi India are a modern travel community that provides end to end travel packages in India and abroad. We design the best travel itineraries that encourage group traveling for like-minded people. Our services include road trips,
+                        trekking expeditions, corporate trips, and customized tour packages. On our trips, we ensure hassle-free traveling, top-notch accommodation and guided sightseeing that too in a budget that won’t burn a hole in your pocket. Just
+                        give us your dates and be ready to experience traveling like never before.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Subscribe Here</h6>
+                    <p class="wysija-paragraph" style="margin-bottom: 0%;">
+                        <label><b>Email </b><span >*</span></label></p>
+                    <input type="text" name="[user][email]" title="Email" value="">
+                    <button type="submit"><i class="material-icons">email</i></button>
+
+
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Address</h6>
+                    <ul>
+                        <li><i class="fa fa-building" aria-hidden="true"></i> Raahi India</li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> Address - 1881D, Above UCO Bank, Near Lucky Bakery, Sudama Nagar.
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +91 89622 45021</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> info@Raahi.com</li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> www.Raahi.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-4">
+                    <span class="navbar-text">
+                        © 2020 Raahi | All rights reserved.
+                    </span>
+                </div>
+                <div class="col-md-5 col-sm-4 col-xs-8">
+                    <span class="navbar-text">
+                     <div class="row">Credits : Amol Kunde (18I5005) , Atul Kumar Gupta (18I5011) </div>
+                     <div class="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dheeraj Kumar Bakoriya (18I5017) , Kushal Biyani (18I5027)</div>
+                    </span>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
